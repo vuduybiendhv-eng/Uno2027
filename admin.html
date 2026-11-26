@@ -1,0 +1,6 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UNO Tết 2027 · Chủ LIVE</title><link rel="stylesheet" href="/style.css"></head><body>
+<header class="hero"><div class="eyebrow">BẢNG ĐIỀU KHIỂN</div><h1>🎙️ CHỦ LIVE <span>UNO TẾT</span></h1><p>Chủ LIVE cũng là người chơi trong bàn 6 người</p><a class="admin-link" href="/">← Trang người chơi</a></header>
+<main class="shell">
+<section class="panel entry"><h2>🧧 Tạo phòng mới</h2><label>Tên chủ LIVE</label><input id="hostName" value="Chủ LIVE" maxlength="24"><button id="createBtn" class="gold-btn">TẠO PHÒNG & THAM GIA</button>
+<div id="roomAdmin" class="hidden"><div class="room-code-big" id="adminCode">------</div><img id="qrImage" class="qr" alt="QR tham gia"><p id="joinUrl" class="muted"></p><button id="copyBtn" class="dark-btn">SAO CHÉP LINK PHÒNG</button><hr><h3>Danh sách người chơi</h3><div id="adminPlayers" class="admin-players"></div><button id="startBtn" class="gold-btn">BẮT ĐẦU CHIA BÀI</button><button id="restartBtn" class="dark-btn">CHIA LẠI / VÁN MỚI</button><p class="muted tiny">Chỉ bắt đầu khi có ít nhất 2 người. Tổng số ghế bao gồm chủ LIVE là 6.</p></div></section>
+<div id="adminToast" class="toast"></div></main><script src="/socket.io/socket.io.js"></script><script src="/admin.js"></script></body></html>
