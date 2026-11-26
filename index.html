@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#7b1425"><title>UNO Tết 2027</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div class="lantern l1">🏮</div><div class="lantern l2">🏮</div>
+<header class="hero"><div class="eyebrow">✦ XUÂN ĐINH MÙI ✦</div><h1>🧧 UNO TẾT <span>2027</span></h1><p>Rút lộc đầu năm · Đánh bài nhận may mắn</p><a class="admin-link" href="/admin.html">Khu vực Chủ LIVE ↗</a></header>
+<main class="shell">
+<section id="entry" class="panel entry"><h2>🌸 Vào phòng chơi</h2><label>Tên hiển thị</label><input id="playerName" maxlength="24" placeholder="Nhập tên của bạn"><label>Mã phòng</label><input id="roomCode" maxlength="6" placeholder="VD: A1B2C3" autocapitalize="characters"><button id="joinBtn" class="gold-btn">VÀO PHÒNG 🧧</button><p class="muted">Tối đa 6 người, bao gồm cả chủ LIVE.</p></section>
+<section id="game" class="hidden">
+<div class="roombar panel"><div><small>MÃ PHÒNG</small><strong id="roomLabel">------</strong></div><div><small>TRẠNG THÁI</small><strong id="statusLabel">Đang chờ</strong></div><div><small>LƯỢT</small><strong id="turnLabel">-</strong></div></div>
+<div class="tabletop panel">
+<div class="table-title">🌼 SÀN ĐẤU MAY MẮN 🌼</div><div id="players" class="players"></div>
+<div class="center-play"><div class="deck-stack"><div class="uno-card back">UNO<br><b>TẾT</b><small>2027</small></div><small id="drawCount">108 lá</small></div><div class="top-card-wrap"><div id="topCard" class="uno-card">?</div><small>MÀU ĐANG CHƠI</small><b id="activeColor">-</b></div></div>
+<div id="notice" class="notice">Đang kết nối...</div>
+</div>
+<div class="hand-panel panel"><div class="hand-head"><h2>🃏 Bài của bạn</h2><button id="unoBtn" class="uno-btn">UNO!</button></div><div id="hand" class="hand"></div><div class="actions"><button id="drawBtn" class="gold-btn">RÚT 1 LÁ</button><button id="passBtn" class="dark-btn">BỎ LƯỢT</button><button id="catchBtn" class="dark-btn">BẮT UNO</button></div><div class="muted tiny">Chọn lá bài để đánh. Lá Wild cần chọn màu.</div></div>
+</section>
+<div id="toast" class="toast"></div>
+</main>
+<footer>🧧 Chúc mừng năm mới 2027 · Chơi vui, kết nối lộc xuân 🌸</footer>
+<script src="/socket.io/socket.io.js"></script><script src="/app.js"></script>
+</body></html>
